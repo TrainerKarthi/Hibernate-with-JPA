@@ -24,8 +24,6 @@ public class FetchEmployeesByName {
 		
 		list.stream().forEach(System.out::println);
 		
-		
-		
 	}
 
 }

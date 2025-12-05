@@ -17,17 +17,10 @@ public class DeletingAnObject {
 //		Helps to manage the transactions.  (Only used when any modification is present in the table)
 		EntityTransaction transaction = entityManager.getTransaction();
 		
-//		Employee employee = entityManager.find(Employee.class, 2);
-		
-//		entityManager.
-		Employee emp = new Employee();
-		emp.setId(901);
-		emp.setName("Hr120");
-		emp.setAge(10);
-		
+		Employee emp = entityManager.find(Employee.class, 2);		
 		
 		transaction.begin();
-		
+		entityManager.remove(emp);
 		transaction.commit();
 		
 		
