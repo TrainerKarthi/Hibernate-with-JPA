@@ -16,8 +16,6 @@ public class Developer {
 	
 	@ManyToOne
 	private TeamLead teamLead;
-
-	
 	
 	public Developer(int id, String name, String role) {
 		super();

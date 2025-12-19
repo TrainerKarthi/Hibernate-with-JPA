@@ -17,8 +17,6 @@ public class TeamLead {
 	@OneToMany
 	private List<Developer> developers;
 	
-	
-
 	public List<Developer> getDevelopers() {
 		return developers;
 	}
@@ -43,6 +41,4 @@ public class TeamLead {
 		this.name = name;
 	}
 	
-	
-
 }
