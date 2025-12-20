@@ -15,11 +15,11 @@ public class SavePersonAadhar {
 		EntityTransaction transaction = entityManager.getTransaction();
 	
 		Person person = new Person();
-		person.setId(1);
+		person.setId(2);
 		person.setName("Karthik");
 		
 		Aadhar aadhar = new Aadhar();
-		aadhar.setId(101);
+		aadhar.setId(102);
 		aadhar.setAadharNum(987654321234l);
 		aadhar.setAddress("chittoor");
 		
@@ -27,7 +27,6 @@ public class SavePersonAadhar {
 		aadhar.setPerson(person);
 		
 		transaction.begin();
-		entityManager.persist(person);
 		entityManager.persist(aadhar);
 		transaction.commit();
 	}

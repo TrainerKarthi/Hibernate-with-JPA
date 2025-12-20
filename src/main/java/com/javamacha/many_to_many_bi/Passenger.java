@@ -2,6 +2,7 @@ package com.javamacha.many_to_many_bi;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
@@ -15,7 +16,7 @@ public class Passenger {
 	
 	private String name;
 	
-	@ManyToMany
+	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable
 	private List<Cab> cabs;
 	

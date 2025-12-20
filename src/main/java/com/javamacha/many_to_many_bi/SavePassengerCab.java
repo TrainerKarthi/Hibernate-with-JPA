@@ -93,11 +93,7 @@ public class SavePassengerCab {
 		entityManager.persist(prasad);
 		entityManager.persist(venu);
 		entityManager.persist(balaji);
-		entityManager.persist(bugati);
-		entityManager.persist(rollsRoyce);
-		entityManager.persist(porsche);
-		entityManager.persist(lamborghini);
-		entityManager.persist(benze);
+		
 		transaction.commit();
 		
 	}

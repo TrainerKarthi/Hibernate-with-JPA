@@ -1,5 +1,6 @@
 package com.javamacha.one_to_one_bi;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -15,7 +16,7 @@ public class Aadhar {
 	private String address;
 	
 	
-	@OneToOne(mappedBy = "aadhar")
+	@OneToOne(mappedBy = "aadhar", cascade = CascadeType.ALL)
 	private Person person;
 
 
