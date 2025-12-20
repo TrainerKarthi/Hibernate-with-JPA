@@ -18,24 +18,24 @@ public class Main {
 		EntityTransaction transaction = entityManager.getTransaction();
 		
 		Employee emp = new Employee();
-		emp.setId(2);
 		emp.setName("Developer");
 		emp.setAge(1000);
+		emp.setMobile(9876543145l);
 		
 		Employee emp1 = new Employee();
-		emp1.setId(3);
 		emp1.setName("Tester");
 		emp1.setAge(500);
+		emp1.setMobile(34567893231l);
 		
 		Employee emp2 = new Employee();
-		emp2.setId(4);
 		emp2.setName("HR");
 		emp2.setAge(10);
+		emp2.setMobile(87654567822l);
 		
 		Employee emp3 = new Employee();
-		emp3.setId(5);
 		emp3.setName("Master");
 		emp3.setAge(10000);
+		emp3.setMobile(78987654522L);
 		
 		transaction.begin();
 		entityManager.persist(emp);//helps to save the data into table
