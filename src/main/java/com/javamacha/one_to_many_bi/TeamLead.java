@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -14,7 +15,7 @@ public class TeamLead {
 	
 	private String name;
 	
-	@OneToMany
+	@OneToMany(mappedBy = "teamLead")
 	private List<Developer> developers;
 	
 	public List<Developer> getDevelopers() {

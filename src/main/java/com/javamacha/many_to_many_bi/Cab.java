@@ -14,11 +14,9 @@ public class Cab {
 	
 	private String cabName;
 	
-	@ManyToMany
+	@ManyToMany(mappedBy="cabs")
 	private List<Passenger> passengers;
 
-	
-	
 	public Cab() {
 		super();
 		// TODO Auto-generated constructor stub

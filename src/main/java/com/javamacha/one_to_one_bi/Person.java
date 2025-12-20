@@ -2,6 +2,7 @@ package com.javamacha.one_to_one_bi;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -13,6 +14,7 @@ public class Person {
 	private String name;
 
 	@OneToOne
+	@JoinColumn(name="my_aadhar")
 	private Aadhar aadhar;
 	
 	

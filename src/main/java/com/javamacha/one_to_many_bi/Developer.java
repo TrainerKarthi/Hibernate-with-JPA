@@ -2,6 +2,7 @@ package com.javamacha.one_to_many_bi;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -15,6 +16,7 @@ public class Developer {
 	private String role;
 	
 	@ManyToOne
+	@JoinColumn
 	private TeamLead teamLead;
 	
 	public Developer(int id, String name, String role) {

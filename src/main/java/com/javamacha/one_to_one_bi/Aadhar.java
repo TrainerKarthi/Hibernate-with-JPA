@@ -15,13 +15,9 @@ public class Aadhar {
 	private String address;
 	
 	
-	@OneToOne
+	@OneToOne(mappedBy = "aadhar")
 	private Person person;
-	
-	
-	
-	
-	
+
 
 	@Override
 	public String toString() {

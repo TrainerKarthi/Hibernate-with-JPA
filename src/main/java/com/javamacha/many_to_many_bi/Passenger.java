@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 @Entity
@@ -15,13 +16,11 @@ public class Passenger {
 	private String name;
 	
 	@ManyToMany
+	@JoinTable
 	private List<Cab> cabs;
 	
-	
-
 	public Passenger() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Passenger(int id, String name) {
