@@ -17,12 +17,13 @@ public class FetchCustomerOrder {
 		Customer customer = entityManager.find(Customer.class, 1);
 		
 //		System.out.println(customer);
+//		
+//		List<Orders> orders = customer.getOrders();
 		
-		List<Orders> orders = customer.getOrders();
+		System.out.println(customer.getName());
+		System.out.println(customer.getOrders());
 		
-		System.out.println(customer);
-		
-		orders.stream().forEach(System.out::println);
+//		orders.stream().forEach(System.out::println);
 	}
 
 }

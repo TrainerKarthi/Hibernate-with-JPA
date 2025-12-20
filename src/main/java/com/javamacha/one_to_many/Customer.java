@@ -3,6 +3,7 @@ package com.javamacha.one_to_many;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
@@ -18,10 +19,9 @@ public class Customer {
 	
 	private long mobile;
 	
-	@OneToMany
+	@OneToMany(fetch = FetchType.LAZY)
 	private List<Orders> orders;
 
-	
 	
 	@Override
 	public String toString() {
